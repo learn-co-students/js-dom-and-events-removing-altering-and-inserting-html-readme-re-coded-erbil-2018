@@ -6,5 +6,29 @@
 
   <body>
     <main id="main"></main>
+    <ul id="ulist">
+
+    </ul>
   </body>
+
+  <script type="text/javascript">
+  let x = document.createElement("p");
+  x.innerHTML = "hello World"
+  let body = document.getElementById("main");
+  body.appendChild(x)
+
+  for (i=0; i<7; i++){
+    let li = document.createElement("li")
+    li.innerHTML = (i+1)
+    let u = document.getElementById("ulist")
+    u.appendChild(li)
+  }
+
+
+
+
+
+
+
+  </script>
 </html>
